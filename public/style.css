@@ -1,0 +1,434 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://i.pinimg.com/originals/e8/d9/4e/e8d94e1e8b6b530ad315e9385290141b.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav .logo a {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.join-us button{
+    display: inline-block;
+    padding: 10px 19px;
+    background-color: #ffffff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chat-container {
+    flex: 1;
+    max-width: 600px;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: 10px;
+    color: #000;
+}
+
+.info-section {
+    flex: 1;
+    max-width: 400px;
+    min-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: #000;
+}
+
+
+.chat-header {
+    text-align: center;
+    margin-bottom: -150px;
+}
+
+.chat-start button {
+    margin-top: 250px;
+    margin-left: 170px;
+    display: inline-block;
+    padding: 10px 19px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-start button:hover {
+    background-color: #0056b3;
+}
+
+.chat-box {
+    margin-top: 200px;
+    
+}
+
+.chat-messages {
+   
+    margin-top: 200px;
+    max-height: 350px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 500px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.chat-input-container {
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+#chatInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+#sendButton {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #0056b3;
+}
+
+.chat-actions {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.chat-actions button {
+   
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-actions button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .chat-container, .info-section {
+        min-width: 80%;
+    }
+}
+
+
+/* for privacy */
+/* style.css */
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for header and navigation */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    left: 10px;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for main content area */
+.main-container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 80vh; /* Example: Limit height to 80% of viewport height */
+}
+
+.content-container {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles as needed */
+
+
+
+/* for terms */
+
+/* style.css */
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for header and navigation */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for main content area */
+.main-container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.content-container {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-bottom: 15px;
+}
+
+li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles as needed */
+
+
+/* for safe chatting */
+
+/* style.css */
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for header and navigation */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for main content area */
+.main-container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.content-container {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles as needed */
+
+
+/* style.css */
+

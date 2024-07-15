@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Random Chat</a>
+            </div>
+            <div class="join-us">
+               <button id="joinUs"> JOIN US </button>
+            </div>
+            
+    </div>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Random Chat - Instant Chat with Strangers</h2>
+            </div>
+            <div class="chat-start" >
+                <button  id="startChat"></a>START CHAT  </button>
+            </div>
+           
+            
+            <div id="chatBox" class="chat-box hidden">
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Type Message Here">
+                    <button id="sendButton">SEND</button>
+                </div>
+            </div>
+
+            <div class="chat-actions hidden">
+                <button id="newChat">New Chat</button>
+            </div>
+        </div>
+        <aside class="info-section">
+            <h3>Welcome to Random Chat</h3>
+            <p>Connect with strangers instantly. No registration required.</p>
+            <p>By starting random chat, you agree to the <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy policy</a>.</p>
+            <p>Read our <a href="safe_chatting_guide.html">Safe Chatting Guide</a> for a secure and enjoyable experience.</p>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2024 Random Chat. All rights reserved.</p>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
+

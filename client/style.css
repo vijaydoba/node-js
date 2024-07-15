@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.chat-container {
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.chat-box {
+    margin-top: 20px;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.chat-actions button {
+    margin-right: 10px;
+}
